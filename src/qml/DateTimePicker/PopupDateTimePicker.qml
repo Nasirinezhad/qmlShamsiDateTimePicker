@@ -123,7 +123,6 @@ Popup {
                 visibleItemCount: 3
                 height: day.height
                 onCurrentIndexChanged: {
-                    console.log(currentIndex)
                     if(field)field.shamsi.month = currentIndex+1
                 }
             }
