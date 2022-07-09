@@ -48,6 +48,7 @@ void Shamsi::calculate(long _timestamp)
             if(this->hours == 23){
                 this->hours = 0;
                 this->dayofyear++;
+                this->dayOfWeek = (this->dayOfWeek+1)%7;
             }else
                 this->hours++;
         }
