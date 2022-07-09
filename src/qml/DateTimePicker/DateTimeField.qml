@@ -10,6 +10,7 @@ TextField {
 
     property var popup: null
     property alias shamsi: shamsi
+    property alias timestamp: shamsi.timestamp
     property string format: 'l j F Y ساعت H:i'
 
 
@@ -29,9 +30,6 @@ TextField {
         id: shamsi
         onChange: {
             field.text= shamsi.format(field.format)
-        }
-        onTimestampChanged: {
-            console.log(timestamp)
         }
     }
 }

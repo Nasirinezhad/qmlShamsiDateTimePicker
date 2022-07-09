@@ -297,6 +297,5 @@ bool Shamsi::getIsLeap()
 long Shamsi::getTimestamp()
 {
     this->reCalculate();
-    emit change();
     return this->timestamp;
 }

@@ -174,10 +174,16 @@ Popup {
 
     onAboutToShow: {
         currentTime = field.shamsi.timestamp
-        go_today()
+        day.currentIndex = field.shamsi.day-1
+        month.currentIndex = field.shamsi.month-1
+        hour.currentIndex = field.shamsi.hours
+        minute.currentIndex = field.shamsi.minutes
+        second.currentIndex = field.shamsi.seconds
         if(years.length < 1){
             years = [...Array(5).keys()].map(i => i +field.shamsi.year -2);
             year.currentIndex = 2
+        }else{
+            year.currentIndex = year.model.indexOf(field.shamsi.year)
         }
     }
 }
