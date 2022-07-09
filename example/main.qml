@@ -28,7 +28,13 @@ ApplicationWindow {
             id: c
             //initial by date time
             shamsi.day: 18
-            shamsi.month: 
+            shamsi.month: 4
+            shamsi.year: 1401
+            shamsi.hours: 22
             popup: popdate
         }
+    }
+    PopupDateTimePicker {
+        id: popdate
+        // !!one popup for all
     }
