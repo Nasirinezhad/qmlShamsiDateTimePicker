@@ -38,3 +38,4 @@ ApplicationWindow {
         id: popdate
         // !!one popup for all
     }
+}
